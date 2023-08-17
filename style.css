@@ -1,5 +1,5 @@
 :root {
-    --bg: #fff;
+    --bg: #000000;
     --primary: #000;
     --secondary: #ffffff00;
 }
@@ -12,7 +12,6 @@
 }
 
 body {
-  background-image: url("bg2.jpg");
   background-color: var(--bg);
   font-family:Arial, Helvetica, sans-serif;
   color: var(--primary);
@@ -38,8 +37,8 @@ h2 {
 
 h4{
     padding: 5px;
-    font-weight: lighter;
-    color: rgb(75, 75, 75);
+    font-weight:400 ;
+    color: black;
 }
 
 ul {
@@ -50,8 +49,8 @@ ul {
 ul li {
   position:relative;
   list-style-type: none;
-  width: 6px;
-  background-color: var(--primary);
+  width: 3px;
+  background-color: black;
   margin: 0 auto;
   padding-top: 50px;
 }
@@ -59,8 +58,8 @@ ul li {
 ul li::after {
   background: var(--primary);
   content: '';
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   position:absolute;
   left:50%;
@@ -71,7 +70,7 @@ ul li::after {
 
 ul li div{
   position: relative;
-  width: 400px;
+  width: 30vw;
   padding: 15px;
   border-radius: 5px;
   background: var(--secondary);
@@ -117,13 +116,13 @@ ul li.show div {
   opacity: 1;
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   ul li div {
     width: 250px;
   }
   ul li:nth-child(even) div {
     left: -289px;
     /*250+45-6*/
-  }
-}
+  /* }
+} */ 
 
